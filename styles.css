@@ -16,56 +16,63 @@ html {
   margin: auto;
   height: 100%;
   background: #070707;
-  padding:16px;
+  padding: 16px;
   box-sizing:border-box;
 
 }
 
-.header, .content, .footer{
+.content {
   background:#33658A;
-  padding:16px;
-  border-radius: 12px
+  padding: 16px;
+  border-radius: 5px
+}
+
+.header {
+  background:#000000;
+  padding: 1px;
+  border-radius: 5px;
+  font-family: 'Indie Flower', cursive;
+
 }
 
 .header h1 {
   text-align: center;
-  font-size: 5vh;
+  font-size: 5vw;
 }
 
 .content {
   margin-top:16px;
   margin-bottom:16px;
-  min-height:calc(100% - 320px)
-
+  min-height:calc(100% - 380px)
 }
 
 .footer {
-  text-align: center;
-  height: 5vh;
-  margin-top:16px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 1020px;
+    height: 1.5rem;
+    font-family: 'Indie Flower', cursive;
 }
 
 .footer-icon-bar {
-  width: 100%; /* Full-width */
-  background-color: #88AB75; /* Orange background */
-  overflow: auto; /* Overflow due to float */
-  border-radius: 12px
+  width: 100%;
+  background-color: #88AB75;
+  overflow: auto;
+  border-radius: 5px
 }
 
 .footer-icon-bar a {
-  float: left; /* Float links side by side */
-  text-align: center; /* Center-align text */
-  width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
-  padding: 12px 0; /* Some top and bottom padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 24px; /* Increased font size */
+  float: left; 
+  text-align: center;
+  width: 20%;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 24px;
 }
 
 .footer-icon-bar a:hover {
-  background-color: #E71D36; /* Add a hover color */
-}
-
-.active {
-  background-color: #023047; /* Add an active/current color */
+  background-color: #E71D36;
 }
